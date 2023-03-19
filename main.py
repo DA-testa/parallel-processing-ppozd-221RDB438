@@ -35,14 +35,14 @@ def main():
     # data - contains m integers t(i) - the times in seconds it takes any thread to process i-th job
     data = []
     r = input().split()
-    for i in range(m-1):
+    for i in range(m):
         data.append(int(r[i]))
 
     # TODO: create the function
     result = parallel_processing(n,m,data)
     
     # TODO: print out the results, each pair in it's own line
-    for i in range(m-1):
+    for i in range(m):
         print(result[i][0], result[i][1])
 
 
